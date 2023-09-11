@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #141414;
+    position: relative;
+    padding-bottom: 10em;
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    position: static;
+    /*
+    justify-content: space-between;
+    align-items: center;
+    */
+    padding: 1px 10%;
+    background-color: #141414;
+    box-shadow: 0 0 10px #FFFFFF;
+    /*background-color: #de744c;*/
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.menu-idioma{
+    position: relative;
+}
+
+.menu-idioma ul{
+    background-color: #141414;  
+    border: 1px solid rgba(255, 255, 255, 0.49);
+    display: none;
+    position: absolute;
+}
+
+.menu-idioma ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-idioma ul li a{
+    width: 125px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.menu-idioma ul li a::before{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.us::before{
+    background-image: url(https://flagsapi.com/US/flat/32.png);
+}
+
+.es::before{
+    background-image: url(https://flagsapi.com/ES/flat/32.png);
+}
+
+.menu-idioma:hover ul{
+    display: block;
+}
+
+.menu-idioma a:hover{
+    text-decoration: underline;
+}
+
+.seleccionar_idioma{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100px;
+}
+
+.seleccionar_idioma::before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://flagsapi.com/ES/flat/32.png);
+}
+
+
+nav{
+    display: flex;
+    margin: 0 auto;
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li, a, button{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.7s ease 0s;
+}
+
+.nav_links a:hover{
+    transition: all 0.7s ease 0s;
+    font-size: 18px;
+    color: #0088ae;
+}
+
+
+
+
+.caja_contacto{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 10px;
+    background-color: #0088ae;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.container{
+    margin-bottom: 100px;
+    /**/
+    padding: 2%;
+    margin-bottom: 4%;
+}
+
+.container h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.formulario {
+    width: 800px;
+    margin: auto;
+}
+
+fieldset {
+    border-radius: 20px;
+    padding: 30px 20px;
+    border-color: white;
+    color: white;
+}
+
+fieldset h2{
+    margin-bottom: 30px;
+}
+
+.contenedor_fieldset{
+    display: flex;
+}
+
+.contenedor_fieldset .img{
+    margin-right: 50px;
+    width: 390px;
+    /*border: solid 1px white;*/
+}
+
+::placeholder { color: black; }
+
+input{
+    width: 300px;
+    height: 35px;
+    margin: 10px 13px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+input[type="submit"] {
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: auto;
+}
+
+input[type="submit"]:hover {
+    transition: all 1s ease 0s;
+    background-color: #0088ea;
+}
+
+.ingresar_crear{
+    margin: 10px 30px;
+    text-align: center;
+}
+
+.dentro_formulario a{
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+.dentro_formulario a:hover{
+    color: #0088ae;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.aaa{
+    margin-bottom: 120px;
+}
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #e1e1e1;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#sobre_nosotros{
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+.nosotros{
+    display: flex;
+    height: 300px;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.img_nosotros{
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+h2{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sobre_nosotros p{
+    flex-wrap: wrap;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    padding: 1em 0;
+    height: 150px;
+    bottom: 0;
+    background-color: #DE744C;
+    position: absolute;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.espacio{
+    width: 25%;
+    margin: 15px;
+}
+
+.empresa li{
+    margin: 4px 0px;
+}
+
+.empresa a{
+    color: black;
+    text-decoration: underline;
+}
+
+.empresa a:hover{
+    color: #0c6eb4;
+}
+
+.empresa-container{
+    list-style: none;
+}
+
+.empresa-container .empresa{
+    list-style: none;
+}
+
+h3{
+    margin-bottom: 5px;
+}
+
+.container-redes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.red, .email{
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background-color: #141414;
+}
+
+.email{
+    width: 230px;
+}
+
+.numero{
+    text-align: center;
+    padding: 3px;
+    color: black;
+}
+
+.redes{
+    text-align: center;
+}
+
+.ubicacion{
+    display: flex;
+}
+
+.fa-map-marler{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.red:hover {
+    opacity: 0.7;
+}
+
+@media (max-width:1020px){
+    .nosotros{
+        display: block;
+        height: auto;
+    }
+    .img_nosotros{
+        display: none;
+    }
+    .container-footer{
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width:890px){
+    /*
+    correciones inicio de sesion
+    */
+}
+
+@media (max-width:768px){
+    .menu-idioma ul{
+        display: block;
+    }
+    .seleccionar_idioma p{
+        display: none;
+    }
+    .formulario{
+        width: auto;
+    }
+    fieldset{
+        padding: 20px 5px;
+    }
+    .contenedor_fieldset {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor_fieldset .img{
+        margin: auto;
+        text-align: center;
+    }
+    .contenedor_fieldset img{
+        width: 200px;
+    }
+    .ingresar_crear{
+        margin-left: auto;
+    }
+    .dentro_formulario{
+        text-align: center;
+    }
+    
+/*
+footer y cambio de idioma
+*/
+}
