@@ -8,7 +8,7 @@
 body{
     background-color: #141414;
     position: relative;
-    padding-bottom: 10em;
+    /*padding-bottom: 10em;*/
     min-height: 100vh;
 }
 
@@ -127,25 +127,6 @@ li, a, button{
     transition: all 0.7s ease 0s;
     font-size: 18px;
     color: #0088ae;
-}
-
-
-
-
-.caja_contacto{
-    width: 200px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-button{
-    padding: 10px;
-    background-color: #0088ae;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
 }
 
 .container{
@@ -327,23 +308,21 @@ h2{
 }
 
 footer{
+    bottom: 0;
     width: 100%;
     padding: 1em 0;
-    height: 150px;
-    bottom: 0;
+    position: relative;
     background-color: #DE744C;
-    position: absolute;
 }
 
 .container-footer{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
+    flex-wrap: wrap;
 }
 
 .espacio{
-    width: 25%;
+    flex: 1;
     margin: 15px;
 }
 
@@ -381,9 +360,12 @@ h3{
     color: white;
 }
 
+.container-redes ul li{
+    list-style: none;
+}
+
 .red, .email{
     padding: 10px;
-    font-size: 30px;
     width: 50px;
     border-radius: 50px;
     text-align: center;
@@ -393,21 +375,29 @@ h3{
 }
 
 .email{
-    width: 230px;
+    width: 100%;
 }
 
 .numero{
     text-align: center;
     padding: 3px;
     color: black;
+    font-size: 20px;
 }
 
 .redes{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.numero, .email{
+    margin: 5px 0;
 }
 
 .ubicacion{
     display: flex;
+    align-items: center;
 }
 
 .fa-map-marler{
@@ -433,21 +423,6 @@ h3{
 }
 
 @media(max-width:890px){
-    /*
-    correciones inicio de sesion
-    */
-}
-
-@media (max-width:768px){
-    .menu-idioma ul{
-        display: block;
-    }
-    .seleccionar_idioma p{
-        display: none;
-    }
-    .formulario{
-        width: auto;
-    }
     fieldset{
         padding: 20px 5px;
     }
@@ -468,8 +443,41 @@ h3{
     .dentro_formulario{
         text-align: center;
     }
-    
-/*
-footer y cambio de idioma
-*/
+    .formulario{
+        width: auto;
+    }
+}
+
+@media (max-width:768px){
+    header{
+        padding: 1px 2%;
+    }
+    .logo{
+        width: 150px;
+        height: auto;
+    }
+    .nav_links {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .nav_links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .seleccionar_idioma::before{
+        align-items: center;
+        margin: 0 auto;
+    }
+    .idioma{
+        display: none;
+    }
+    .menu-idioma ul li a{
+        width: auto;
+    }
+    /*.menu-idioma {
+        display: flex;
+        justify-content: center;
+        
+    }*/
 }
