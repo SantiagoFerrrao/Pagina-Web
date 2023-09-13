@@ -43,11 +43,72 @@
     <div class="servicios">
         <h1 style="color: white;">Servicios</h1> <br><br>
         <ul class="nav_servicios">
-            <li class="a ges_almacenes"><p class="texto-li">Gestión de Almacenes</p></li>
-            <li class="a ges_transporte"><p class="texto-li">Gestión de Transporte</p></li>
-            <li class="a ras_paquetes"><p class="texto-li">Rastreo de Paquetes</p></li>
+            <li class="a ges_almacenes">
+                <p class="texto-li">Gestión de Almacenes</p>
+            </li>
+            </li>
+            <li class="a ges_transporte">
+                <p class="texto-li">Gestión de Transporte</p>
+            </li>
+            <li class="a ras_paquetes">
+                <p class="texto-li">Rastreo de Paquetes</p>
+            </li>
         </ul>
+        <div class="textos">
+            <div class="texto txt_almacen">
+                    <Lorem class="txt">ALMACEN <br> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, illum voluptas. Non, vero vel excepturi neque rerum at autem vitae.</p>
+            </div>
+            <div class="texto txt_transporte">
+                <p class="txt">TRANSPORTE <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto sequi mollitia facere optio enim eveniet tenetur vel excepturi ex dolores.</p>
+            </div>
+            <div class="texto txt_paquetes">
+                <Lorem class="txt">PAQUETE <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nam voluptate quae laborum quos eos ex excepturi minima? Explicabo, qui.</p>
+            </div>
+        </div>
     </div>
+
+    <script>
+        const gesAlmacenes = document.querySelector('.ges_almacenes');
+        const txtAlmacen = document.querySelector('.txt_almacen');
+
+        gesAlmacenes.addEventListener('click', () => {
+            txtAlmacen.style.display = 'block';
+            const textos = document.querySelectorAll('.texto');
+            textos.forEach((texto) => {
+                if (texto !== txtAlmacen) {
+                    texto.style.display = 'none';
+                }
+            });
+        });
+
+        const gesTransporte = document.querySelector('.ges_transporte');
+        const txtTransporte = document.querySelector('.txt_transporte');
+
+        gesTransporte.addEventListener('click', () => {
+            txtTransporte.style.display = 'block';
+            const textos = document.querySelectorAll('.texto');
+            textos.forEach((texto) => {
+                if (texto !== txtTransporte) {
+                    texto.style.display = 'none';
+                }
+            });
+        });
+
+        const gesPaquete = document.querySelector('.ras_paquetes');
+        const txtPaquete = document.querySelector('.txt_paquetes');
+
+        gesPaquete.addEventListener('click', () => {
+            txtPaquete.style.display = 'block';
+            const textos = document.querySelectorAll('.texto');
+            textos.forEach((texto) => {
+                if (texto !== txtPaquete) {
+                    texto.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
     <footer>
         <div class="container-footer">
