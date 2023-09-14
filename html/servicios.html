@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -56,58 +57,37 @@
         </ul>
         <div class="textos">
             <div class="texto txt_almacen">
-                    <Lorem class="txt">ALMACEN <br> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, illum voluptas. Non, vero vel excepturi neque rerum at autem vitae.</p>
+                <p class="txt">ALMACEN <br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque hic praesentium, quaerat repellendus culpa dolorem enim aspernatur harum recusandae omnis. Dolore officia iste, blanditiis repellendus sunt perspiciatis delectus fuga pariatur est. Quam aliquam vitae quidem, pariatur officia voluptas officiis deserunt cupiditate ea eum et dolore alias atque modi hic. Ad, magnam voluptatum eius recusandae molestias vero, cum ipsa fugiat ducimus assumenda necessitatibus id natus eveniet pariatur. Praesentium dicta mollitia tempore saepe, iusto illo minima, sapiente commodi ipsam laudantium enim repellat et? Enim consectetur in, ipsa tenetur est vitae optio, velit iusto quis, officia nulla fuga. Ipsa inventore dolorem perferendis sequi sapiente, autem fugit optio quo illum ea voluptatem laboriosam dolores a explicabo repudiandae mollitia maxime harum ab earum tenetur nobis?</p>
             </div>
             <div class="texto txt_transporte">
-                <p class="txt">TRANSPORTE <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto sequi mollitia facere optio enim eveniet tenetur vel excepturi ex dolores.</p>
+                <p class="txt">TRANSPORTE <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nihil beatae odit itaque, eius alias nesciunt inventore at officia in, tenetur quam quia ipsam nisi facilis similique. Voluptatibus facere consequatur expedita est tempora dolor molestiae ex non voluptates, quae suscipit et harum autem iusto, necessitatibus vel molestias quod fugit eius. Amet dolorum reiciendis dignissimos accusantium recusandae praesentium eum temporibus id et doloribus debitis iste animi illum officiis, quibusdam labore possimus. Itaque unde similique aspernatur et quaerat accusantium quos at, nostrum sint facilis corporis ipsam pariatur a dicta tempora tempore aut quas natus animi maiores aliquam molestias ratione quia. Iste saepe dolore incidunt soluta hic quia neque perspiciatis debitis, aut exercitationem. Non sed obcaecati excepturi veniam harum, libero eos possimus debitis.</p>
             </div>
             <div class="texto txt_paquetes">
-                <Lorem class="txt">PAQUETE <br>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nam voluptate quae laborum quos eos ex excepturi minima? Explicabo, qui.</p>
+                <p class="txt">PAQUETE <br><br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae numquam, reprehenderit adipisci repellat deleniti ipsum eaque ipsa quasi ea hic aspernatur! Iste, animi. Odio quibusdam asperiores molestias provident. Ratione, odit tempore ad dicta temporibus deserunt nam! Quae ad dicta dignissimos maxime iusto soluta accusamus sunt tenetur mollitia nesciunt, eligendi minima ipsum facere ipsa quia repellendus atque asperiores illum ut veniam optio blanditiis. Consectetur, voluptatum obcaecati tenetur facere nam veniam, inventore cupiditate, sapiente ullam vitae nostrum aspernatur atque. Suscipit culpa repellendus voluptatum ratione at ex dignissimos, soluta earum ipsum sed cumque et eius! Odio, numquam? Impedit est necessitatibus quia nam! Sint, perspiciatis qui ab beatae recusandae voluptatem modi, et reiciendis perferendis impedit aspernatur. Recusandae nostrum voluptas corrupti fuga temporibus, sint repudiandae.</p>
             </div>
         </div>
     </div>
 
     <script>
-        const gesAlmacenes = document.querySelector('.ges_almacenes');
-        const txtAlmacen = document.querySelector('.txt_almacen');
-
-        gesAlmacenes.addEventListener('click', () => {
-            txtAlmacen.style.display = 'block';
-            const textos = document.querySelectorAll('.texto');
-            textos.forEach((texto) => {
-                if (texto !== txtAlmacen) {
-                    texto.style.display = 'none';
-                }
-            });
+        $(document).ready(function() {
+        $('.ges_almacenes').click(function() {
+            $('.txt_almacen').fadeToggle('slow');
+            $('.texto').not('.txt_almacen').fadeOut('slow');
         });
 
-        const gesTransporte = document.querySelector('.ges_transporte');
-        const txtTransporte = document.querySelector('.txt_transporte');
-
-        gesTransporte.addEventListener('click', () => {
-            txtTransporte.style.display = 'block';
-            const textos = document.querySelectorAll('.texto');
-            textos.forEach((texto) => {
-                if (texto !== txtTransporte) {
-                    texto.style.display = 'none';
-                }
-            });
+        $('.ges_transporte').click(function() {
+            $('.txt_transporte').fadeToggle('slow');
+            $('.texto').not('.txt_transporte').fadeOut('slow');
         });
 
-        const gesPaquete = document.querySelector('.ras_paquetes');
-        const txtPaquete = document.querySelector('.txt_paquetes');
-
-        gesPaquete.addEventListener('click', () => {
-            txtPaquete.style.display = 'block';
-            const textos = document.querySelectorAll('.texto');
-            textos.forEach((texto) => {
-                if (texto !== txtPaquete) {
-                    texto.style.display = 'none';
-                }
-            });
+        $('.ras_paquetes').click(function() {
+            $('.txt_paquetes').fadeToggle('slow');
+            $('.texto').not('.txt_paquetes').fadeOut('slow');
         });
+    });
     </script>
 
     <footer>
