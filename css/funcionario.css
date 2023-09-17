@@ -5,14 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-html{
-    position: relative;
-    min-height: 100%;
-}
-
 body{
     background-color: #141414;
     position: relative;
+    /*padding-bottom: 10em;*/
     min-height: 100vh;
 }
 
@@ -133,92 +129,33 @@ li, a, button{
     color: #0088ae;
 }
 
-/*-------------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
 
-.servicios{
-    text-align: center;
-    padding: 5% 0;
+.contenedor{
+    width: 100%;
+    margin: 70px 0;
 }
 
-ul.nav_servicios{
-    display: flex;
-    padding: 0 5%;
-    justify-content: space-evenly;
+.paquetes{
+    width: 100%;
+    text-align: center;
 }
 
-.a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    width: 250px;
-    height: 250px;
-    border: 1px solid white;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-}
-
-.textos{
-    display: flex;
-    justify-content: center;
-    height: auto;
-    margin: 70px;
-}	
-
-.texto{
-    display: none;
-    text-align: center;
-    vertical-align: middle;
+h2{
     color: white;
-    border: 1px solid white;
-    border-radius: 50px;
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
 }
 
-.txt{
-    padding: 30px;
-
+th{
+    color: white;
 }
 
-li.ges_almacenes{
-    background-image: url(/img/camion-caja-mapa.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all 0.7s ease 0s;
-}
-
-li.get_almacenes:hover{
-    transition: all 0.7s ease 0s;
-    width: 300px;
-    height: 300px;
-}
-
-li.ges_transporte{
-    background-image: url(/img/supply-chain-representation-still-life.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.ras_paquetes{
-    background-image: url(/img/arrangement-with-laptop-boxes.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.texto-li{
-    backdrop-filter: blur(10px);
-}
-
-/*-------------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
 
 footer{
+    bottom: 0;
     width: 100%;
-    height: auto;
     padding: 1em 0;
-    position: relative;
+    position: absolute;
     background-color: #DE744C;
 }
 
@@ -330,7 +267,29 @@ h3{
 }
 
 @media(max-width:890px){
-    
+    fieldset{
+        padding: 20px 5px;
+    }
+    .contenedor_fieldset {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor_fieldset .img{
+        margin: auto;
+        text-align: center;
+    }
+    .contenedor_fieldset img{
+        width: 200px;
+    }
+    .ingresar_crear{
+        margin-left: auto;
+    }
+    .dentro_formulario{
+        text-align: center;
+    }
+    .formulario{
+        width: auto;
+    }
 }
 
 @media (max-width:768px){
@@ -360,14 +319,9 @@ h3{
     .menu-idioma ul li a{
         width: auto;
     }
-    ul.nav_servicios {
-        flex-direction: column;
-        align-items: center;
-    }
-    .a {
-        margin: 10px 0;
-    }
-    .texto {
-        height: auto;
-    }
+    /*.menu-idioma {
+        display: flex;
+        justify-content: center;
+        
+    }*/
 }

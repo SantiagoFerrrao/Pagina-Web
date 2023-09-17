@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/servicios.css">
+    <link rel="stylesheet" href="../css/servicios.css">
     <title>Servicios</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
@@ -72,22 +72,42 @@
     </div>
 
     <script>
+        
         $(document).ready(function() {
-        $('.ges_almacenes').click(function() {
-            $('.txt_almacen').fadeToggle('slow');
-            $('.texto').not('.txt_almacen').fadeOut('slow');
-        });
+        let elementoVisible = null;
 
-        $('.ges_transporte').click(function() {
-            $('.txt_transporte').fadeToggle('slow');
-            $('.texto').not('.txt_transporte').fadeOut('slow');
-        });
+            $('.ges_almacenes').hover(function() {
+                if (elementoVisible) {
+                    elementoVisible.fadeToggle('slow', function() {
+                        $('.txt_almacen').fadeIn('slow');
+                        
+                    });
+                } else {
+                    $('.txt_almacen').fadeToggle('slow');
+                }
+            });
 
-        $('.ras_paquetes').click(function() {
-            $('.txt_paquetes').fadeToggle('slow');
-            $('.texto').not('.txt_paquetes').fadeOut('slow');
+            $('.ges_transporte').hover(function() {
+                if (elementoVisible) {
+                    elementoVisible.fadeToggle('slow', function() {
+                        $('.txt_transporte').fadeIn('slow');
+                    });
+                } else {
+                    $('.txt_transporte').fadeToggle('slow');
+                    
+                }
+            });
+
+            $('.ras_paquetes').hover(function() {
+                if (elementoVisible) {
+                    elementoVisible.fadeToggle('slow', function() {
+                        $('.txt_paquetes').fadeIn('slow');
+                    });
+                } else {
+                    $('.txt_paquetes').fadeToggle('slow');
+                }
+            });
         });
-    });
     </script>
 
     <footer>
