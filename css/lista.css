@@ -1,0 +1,45 @@
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.contenedor_lista{
+    margin: 50px 0;
+    width: 100%;
+}
+
+.lista{
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.tabla{
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+th{
+    padding: 5px;
+    color: white;
+    border: white 1px solid;
+    white-space: normal;
+    overflow: hidden;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.btn{
+    border: none;
+    width: 200px;
+}
+
+.btn-modificar, .btn-eliminar{
+    color: black;
+    cursor: pointer;
+    padding: 3px;
+}
