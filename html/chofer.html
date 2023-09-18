@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <title>Chofer</title>
     <link rel="stylesheet" href="../css/chofer.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -39,46 +40,48 @@
     </header>
     
     <!-- Debe poder ver el camion al que esta asignado y donde esta ubicado el mismo -->
-
-    <div class="contenedor_camion">
-        <h2 class="info_camion">Informacion del camion</h2>
-        <div class="camion">
-                <table class="tabla">
-                    <thead>
-                        <tr>
-                            <th>Matricula</th>
-                            <th>Peso Maximo</th>
-                            <th>Ubicacion</th>
-                            <th>Descripcion de la carga</th>
-                            <th>Destino</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                    </tr>
-                    <tr>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                    </tr>
-                    <tr>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                    </tr>
-                </table>
+    <main>
+        <div class="contenedor_camion">
+            <h1 style="color: white; margin-bottom: 70px; text-align: center;">- Chofer -</h1>
+            <div class="contenedor_lista">
+                <h2 class="info_camion">Informacion del camion</h2>
+                <div class="lista camion">
+                        <table class="tabla">
+                            <tr>
+                                <th>Matricula</th>
+                                <th>Peso Maximo</th>
+                                <th>Ubicacion</th>
+                                <th>Descripcion de la carga</th>
+                                <th>Destino</th>
+                            </tr>
+                            <tr>
+                                <td data-cell="Matricula">...</td>
+                                <td data-cell="Peso Maximo">...</td>
+                                <td data-cell="Ubicacion">...</td>
+                                <td data-cell="Descripcion de la carga">...</td>
+                                <td data-cell="Destino">...</td>
+                            </tr>
+                            <tr>
+                                <td data-cell="Matricula">...</td>
+                                <td data-cell="Peso Maximo">...</td>
+                                <td data-cell="Ubicacion">...</td>
+                                <td data-cell="Descripcion de la carga">...</td>
+                                <td data-cell="Destino">...</td>
+                            </tr>
+                            <tr>
+                                <td data-cell="Matricula">...</td>
+                                <td data-cell="Peso Maximo">...</td>
+                                <td data-cell="Ubicacion">...</td>
+                                <td data-cell="Descripcion de la carga">...</td>
+                                <td data-cell="Destino">...</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container-footer">
             <div class="empresa-container espacio">
                 <h3>Empresa:</h3>

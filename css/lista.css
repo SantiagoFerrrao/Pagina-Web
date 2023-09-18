@@ -1,3 +1,5 @@
+
+/*
 .footer{
     position: absolute;
 }
@@ -7,18 +9,6 @@ h2{
     text-align: center;
 }
 
-.contenedor_lista{
-    margin: 50px 0;
-    width: 100%;
-}
-
-.lista{
-    text-align: center;
-    width: 1000px;
-    margin: auto;
-    margin-top: 50px;
-}
-
 .tabla{
     border-collapse: collapse;
     width: 100%;
@@ -26,7 +16,7 @@ h2{
     margin: auto;
 }
 
-th{
+th, td{
     padding: 5px;
     color: white;
     border: white 1px solid;
@@ -50,4 +40,98 @@ th{
 .btn-modificar:hover, .btn-eliminar:hover{
     transition: all 1s ease 0s;
     background-color: #0088ea;
+}
+
+@media(max-width: 768px){
+    .table{
+        font-size: 12px;
+    }
+    th{
+        display: none;
+    }
+    td{
+        display: grid;
+        grid-template-columns: 15ch auto;
+        padding: 5px;
+    }
+}
+*/
+.footer{
+    position: absolute;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    margin: 45px 0;
+}
+
+.contenedor_lista{
+    width: min(900px, 100% - 3rem);
+    margin-inline: auto;
+    margin-bottom: 100px;
+}
+
+table{
+    width: 100%;
+    padding: 1rem;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 1rem;
+    color: white;
+}
+
+th{
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn{
+    border: none;
+    width: 200px;
+}
+
+.btn-modificar, .btn-eliminar{
+    color: black;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.btn-modificar:hover, .btn-eliminar:hover{
+    transition: all 1s ease 0s;
+    background-color: #0088ea;
+}
+
+/*
+.contenedor_lista{
+    max-width: 100%;
+    overflow-x: scroll;
+}
+*/
+
+tr:nth-of-type(2n){
+    background-color: rgb(58, 58, 58);
+}
+
+@media (max-width: 650px){
+    
+    th{
+        display: none;
+    }
+
+    td{
+        display: grid;
+        padding: 5px;
+        grid-template-columns: 15ch auto;
+    }
+
+    td::before{
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+
 }

@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <title>Funcionario</title>
     <link rel="stylesheet" href="../css/funcionario.css">
-    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/lista.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -41,12 +42,13 @@
         </nav>
     </header>
 
-    <div class="contenedor">
-        <div class="tarea_paquete">
-            <h2>Tareas - Paquete</h2>
-            <div class="paquete">
-                <table class="tabla">
-                    <thead>
+    <main>
+        <div class="contenedor">
+            <h1 style="color: white; margin-bottom: 70px; text-align: center;">- Funcionario -</h1>
+            <div class="contenedor_lista tarea_paquete">
+                <h2>- Paquete -</h2>
+                <div class="paquete">
+                    <table class="tabla">
                         <tr>
                             <th>ID</th>
                             <th>Descripcion</th>
@@ -54,106 +56,103 @@
                             <th>ID Lote</th>
                             <th>Estado</th>
                         </tr>
-                    </thead>
-                    <tr>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>
-                            <select>
-                                <option value="preparado">Pendiente</option>
-                                <option value="preparado">Preparado</option>
-                                <option value="cargado">Cargado</option>
-                            </select>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>
-                            <select>
-                                <option value="preparado">Pendiente</option>
-                                <option value="preparado">Preparado</option>
-                                <option value="cargado">Cargado</option>
-                            </select>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>
-                            <select>
-                                <option value="preparado">Pendiente</option>
-                                <option value="preparado">Preparado</option>
-                                <option value="cargado">Cargado</option>
-                            </select>
-                        </th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="tarea_lote">
-            <div class="lote">
-                <h2>Tareas - Lote</h2>
-            <div class="paquete">
-                <table class="tabla">
-                    <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Descripcion</th>
-                            <th>Peso en Kg</th>
-                            <th>Estado</th>
+                            <td data-cell="ID">...</td>
+                            <td data-cell="Descripcion">...</td>
+                            <td data-cell="Peso en Kg">...</td>
+                            <td data-cell="ID Lote">...</td>
+                            <td data-cell="Estado">
+                                <select>
+                                    <option value="preparado">Pendiente</option>
+                                    <option value="preparado">Preparado</option>
+                                    <option value="cargado">Cargado</option>
+                                </select>
+                            </td>
                         </tr>
-                    </thead>
-                    <tr>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>
-                            <select>
-                                <option value="preparado">Pendiente</option>
-                                <option value="preparado">Preparado</option>
-                                <option value="cargado">Cargado</option>
-                            </select>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>
-                            <select>
-                                <option value="preparado">Pendiente</option>
-                                <option value="preparado">Preparado</option>
-                                <option value="cargado">Cargado</option>
-                            </select>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>...</th>
-                        <th>
-                            <select>
-                                <option value="preparado">Pendiente</option>
-                                <option value="preparado">Preparado</option>
-                                <option value="cargado">Cargado</option>
-                            </select>
-                        </th>
-                    </tr>
-                </table>
+                        <tr>
+                            <td data-cell="ID">...</td>
+                            <td data-cell="Descripcion">...</td>
+                            <td data-cell="Peso en Kg">...</td>
+                            <td data-cell="ID Lote">...</td>
+                            <td data-cell="Estado">
+                                <select>
+                                    <option value="preparado">Pendiente</option>
+                                    <option value="preparado">Preparado</option>
+                                    <option value="cargado">Cargado</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-cell="ID">...</td>
+                            <td data-cell="Descripcion">...</td>
+                            <td data-cell="Peso en Kg">...</td>
+                            <td data-cell="ID Lote">...</td>
+                            <td data-cell="Estado">
+                                <select>
+                                    <option value="preparado">Pendiente</option>
+                                    <option value="preparado">Preparado</option>
+                                    <option value="cargado">Cargado</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+            <div class="contenedor_lista tarea_lote">
+                <h2>- Lotes -</h2>
+                <div class="lote">
+                    <div class="paquete">
+                        <table class="tabla">
+                            <tr>
+                                <th>ID</th>
+                                <th>Descripcion</th>
+                                <th>Peso en Kg</th>
+                                <th>Estado</th>
+                            </tr>
+                            <tr>
+                                <td data-cell="ID">...</td>
+                                <td data-cell="Descripcion">...</td>
+                                <td data-cell="Peso Kg">...</td>
+                                <td data-cell="Estado">
+                                    <select>
+                                        <option value="preparado">Pendiente</option>
+                                        <option value="preparado">Preparado</option>
+                                        <option value="cargado">Cargado</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-cell="ID">...</td>
+                                <td data-cell="Descripcion">...</td>
+                                <td data-cell="Peso Kg">...</td>
+                                <td data-cell="Estado">
+                                    <select>
+                                        <option value="preparado">Pendiente</option>
+                                        <option value="preparado">Preparado</option>
+                                        <option value="cargado">Cargado</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-cell="ID">...</td>
+                                <td data-cell="Descripcion">...</td>
+                                <td data-cell="Peso Kg">...</td>
+                                <td data-cell="Estado">
+                                    <select>
+                                        <option value="preparado">Pendiente</option>
+                                        <option value="preparado">Preparado</option>
+                                        <option value="cargado">Cargado</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
-
-    <footer>
+    <footer class="footer-fun">
         <div class="container-footer">
             <div class="empresa-container espacio">
                 <h3>Empresa:</h3>
