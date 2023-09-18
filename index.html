@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fork Software</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="img/LOGO.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
@@ -64,6 +64,20 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     
+    <div class="contenedor_rastreo">
+        <form action="html/rastreo.html" method="get">
+            <fieldset>
+                <div class="rastreo">
+                <h2>Rastrear su pedido</h2>
+                    <div class="codigo">
+                        <input type="text" placeholder="#codigo">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
     <script src="js/script.js"></script>
 
     <div class="container">
@@ -81,7 +95,6 @@
                         <input type="password" name="contraseña" maxlength="12" placeholder="Contraseña" required>
                         <div class="ingresar_crear">
                             <input type="submit" value="INGRESAR">
-                            <a href="#">Crear cuenta</a> 
                         </div>
                     </div>
                 </div>
@@ -93,11 +106,11 @@
     <div class="container_roles">
         <div class="roles" style="margin: 100px;">
             <ul>
-                <li><a href="html/cliente.html">Cliente</a></li><br>
+                <li><a href="html/rastreo.html">Rastreo de paquete</a></li><br>
                 <li><a href="html/chofer.html">Chofer</a></li><br>
                 <li><a href="html/gerente.html">Gerente</a></li><br>
                 <li><a href="html/funcionario.html">Funcionario</a></li><br>
-                <li><a href="html/administrador.html">Administrador</a></li><br>
+                <li><a href="html/administrador.html">Administrador</a></li>
             </ul>
         </div>
     </div>
@@ -127,6 +140,7 @@
             </div>
         </div>
     </div>
+
     <footer>
         <div class="container-footer">
             <div class="empresa-container espacio">

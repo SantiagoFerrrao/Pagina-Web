@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cliente</title>    
-    <link rel="stylesheet" href="../css/cliente.css">
+    <title>Rastreo</title>    
+    <link rel="stylesheet" href="../css/rastreo.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -20,7 +21,7 @@
                 <ul class="nav_links">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="#sobre_nosotros" >Sobre nosotros</a></li>
-                    <li><a href="/html/servicios.html">Servicios</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -40,20 +41,8 @@
         </nav>
     </header>
 
-    <!-- Debe poder ver su la informacion de su pedido, ver por donde va y su lugar de entrega -->
-
-    <div class="container_opciones">
-        <div class="opciones" style="text-align: center;  margin: auto;">
-            <div class="opcion_paquete">
-                <h1 style="color: white;">Informacion del Paquete - Rastreo del Paquete</h1>
-            </div>
-            <!-- <div class="opcion_rastreo">
-                <h1 style="color: white;">Rastreo del Paquete</h1><br>
-            </div> -->
-        </div>
-    </div>
-
     <div class="container_paquete" style="margin: 100px;">
+        <h1>Informacion del Paquete - Rastreo del Paquete</h1>
         <div class="paquete">
             <table class="tabla_escritorio" style="border-collapse: collapse;">
                 <thead>
@@ -88,10 +77,8 @@
 
     <div class="contenedor_rastreo">
         <div class="rastreo">
-            <h2>Rastreo :</h2>
-            <!-- <div class="contenedor_mapa">
-                <img class="mapa" src="/img/LOGO.png" alt="">
-            </div> -->
+            <h2>Rastreo</h2>
+            <div class="rastrear"><input type="submit" value="Rastrear"></div>
             <div class="mapa"></div>
         </div>
     </div>

@@ -1,3 +1,6 @@
+.footer{
+    position: absolute;
+}
 
 h2{
     color: white;
@@ -42,4 +45,9 @@ th{
     color: black;
     cursor: pointer;
     padding: 3px;
+}
+
+.btn-modificar:hover, .btn-eliminar:hover{
+    transition: all 1s ease 0s;
+    background-color: #0088ea;
 }

@@ -129,183 +129,9 @@ li, a, button{
     color: #0088ae;
 }
 
-.container{
-    margin-bottom: 100px;
-    /**/
-    padding: 2%;
-    margin-bottom: 4%;
-}
+/*----------------------------------------------------------------------------------------*/
 
-.container h1{
-    text-align: center;
-    color: white;
-    margin-bottom: 60px;
-}
-
-.formulario {
-    width: 800px;
-    margin: auto;
-}
-
-fieldset {
-    border-radius: 20px;
-    padding: 30px 20px;
-    border-color: white;
-    color: white;
-}
-
-fieldset h2{
-    margin-bottom: 30px;
-}
-
-.contenedor_fieldset{
-    display: flex;
-}
-
-.contenedor_fieldset .img{
-    margin-right: 50px;
-    width: 390px;
-    /*border: solid 1px white;*/
-}
-
-::placeholder { color: black; }
-
-input{
-    width: 300px;
-    height: 35px;
-    margin: 10px 13px;
-    padding-left: 10px;
-    border: none;
-    border-radius: 5px;
-    color: black;
-}
-
-input[type="submit"] {
-    padding: 0;
-    width: 100px;
-    height: 30px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    margin: auto;
-}
-
-input[type="submit"]:hover {
-    transition: all 1s ease 0s;
-    background-color: #0088ea;
-}
-
-.ingresar_crear{
-    margin: 10px 30px;
-    text-align: center;
-}
-
-.dentro_formulario a{
-    text-decoration: underline;
-    margin-left: 20px;
-}
-
-.dentro_formulario a:hover{
-    color: #0088ae;
-}
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    margin-top: 80px;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-.aaa{
-    margin-bottom: 120px;
-}
-
-.dot {
-    cursor:pointer;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color: #717171;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #e1e1e1;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-#sobre_nosotros{
-    width: 100%;
-    margin-top: 200px;
-    margin-bottom: 150px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 0 10px #FFFFFF;
-}
-
-.nosotros{
-    display: flex;
-    height: 300px;
-    padding: 20px 50px;
-    align-items: center;
-}
-
-.img_nosotros{
-    vertical-align: middle;
-    margin-right: 30px;
-}
-
-h2{
-    color: white;
-    margin-bottom: 10px;
-}
-
-.sobre_nosotros p{
-    flex-wrap: wrap;
-    color: white;
-}
+/*----------------------------------------------------------------------------------------*/
 
 footer{
     bottom: 0;
@@ -407,6 +233,12 @@ h3{
 
 .red:hover {
     opacity: 0.7;
+}
+
+@media (max-height:800px){
+    footer, .footer{
+        position: relative;
+    }
 }
 
 @media (max-width:1020px){

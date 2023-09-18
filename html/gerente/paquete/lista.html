@@ -6,6 +6,11 @@
     <title>Lista - Paquete</title>
     <link rel="stylesheet" href="../../../css/lista.css">
     <link rel="stylesheet" href="../../../css/style2.css">
+    <link rel="icon" href="img/LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,7 +21,7 @@
             <div class="algo">
                 <ul class="nav_links">
                     <li><a href="../../../index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="../../servicios.html">Servicios</a></li>
                 </ul>
             </div>
             <div class="menu-idioma">
@@ -43,17 +48,30 @@
                         <tr>
                             <th>ID</th>
                             <th>Descripcion</th>
+                            <th>Peso en Kg</th>
+                            <th>ID Lote</th>
                             <th>Estado</th>
+                            <th>Estado entrega</th>
+                            <th style="border: none;"></th>
                         </tr>
                     </thead>
                     <tr>
                         <th>...</th>
                         <th>...</th>
+                        <th>...</th>
+                        <th>...</th>
                         <th>
                             <select>
                                 <option value="creado">Creado</option>
                                 <option value="preparado">Preparado</option>
                                 <option value="cargado">Cargado</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select>
+                                <option value="almacen">Almacen</option>
+                                <option value="transito">Transito</option>
+                                <option value="entregado">Entregado</option>
                             </select>
                         </th>
                         <th class="btn">
@@ -64,6 +82,8 @@
                     <tr>
                         <th>...</th>
                         <th>...</th>
+                        <th>...</th>
+                        <th>...</th>
                         <th>
                             <select>
                                 <option value="creado">Creado</option>
@@ -71,12 +91,21 @@
                                 <option value="cargado">Cargado</option>
                             </select>
                         </th>
+                        <th>
+                            <select>
+                                <option value="almacen">Almacen</option>
+                                <option value="transito">Transito</option>
+                                <option value="entregado">Entregado</option>
+                            </select>
+                        </th>
                         <th class="btn">
-                            <button class="btn-modificar">Modificar</button>
+                            <button class="btn-modificar"><a href="#" style="color: black;">Modificar</a></button>
                             <button class="btn-eliminar">Eliminar</button>
                         </th>
                     </tr>
                     <tr>
+                        <th>...</th>
+                        <th>...</th>
                         <th>...</th>
                         <th>...</th>
                         <th>
@@ -84,6 +113,13 @@
                                 <option value="creado">Creado</option>
                                 <option value="preparado">Preparado</option>
                                 <option value="cargado">Cargado</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select>
+                                <option value="almacen">Almacen</option>
+                                <option value="transito">Transito</option>
+                                <option value="entregado">Entregado</option>
                             </select>
                         </th>
                         <th class="btn">
