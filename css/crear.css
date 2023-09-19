@@ -1,0 +1,142 @@
+/*
+h1{
+    color: white;
+    text-align: center;
+}
+
+.container_crear{
+    margin-bottom: 100px;
+    padding: 2%;
+    margin-bottom: 4%;
+}
+
+.formulario {
+    width: 800px;
+    margin: auto;
+}
+
+.formulario fieldset {
+    border-radius: 20px;
+    padding: 30px 20px;
+    border-color: white;
+    color: white;
+}
+
+.formulario fieldset h2{
+    margin-bottom: 30px;
+}
+
+.contenedor_fieldset{
+    display: flex;
+}
+
+.contenedor_fieldset .img{
+    margin-right: 50px;
+    width: 390px;
+    /*border: solid 1px white;*/
+/*}
+
+::placeholder { color: black; }
+
+.dentro_formulario input{
+    width: 300px;
+    height: 35px;
+    margin: 10px 13px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.ingresar_crear input[type="submit"] {
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: auto;
+}
+
+input[type="submit"]:hover {
+    transition: all 1s ease 0s;
+    background-color: #0088ea;
+}
+
+.ingresar_crear{
+    margin: 10px 30px;
+    text-align: center;
+}
+
+.dentro_formulario a{
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+.dentro_formulario a:hover{
+    color: #0088ae;
+}
+
+.footer{
+    position: absolute;
+}
+*/
+
+.container_crear {
+    margin: 75px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+fieldset {
+    margin: auto;
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+input[type="submit"] {
+    color: black;
+    margin: auto;
+    width: 200px;
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #DE744C;
+}
+
+.footer{
+    position: absolute;
+}
+
