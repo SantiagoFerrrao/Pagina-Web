@@ -1,3 +1,7 @@
+h1{
+    color: white;
+}
+
 .servicios{
     text-align: center;
     padding: 5% 0;
@@ -47,7 +51,7 @@ ul.nav_servicios{
 }
 
 li.ges_almacenes{
-    background-image: url(../img/camion-caja-mapa.jpg);
+    background-image: url(../img/vehicles-laptop-supply-chain-representation.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.7s ease 0s;
@@ -60,13 +64,13 @@ li.get_almacenes:hover{
 }
 
 li.ges_transporte{
-    background-image: url(../img/supply-chain-representation-still-life.jpg);
+    background-image: url(../img/camion-caja-mapa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .ras_paquetes{
-    background-image: url(../img/arrangement-with-laptop-boxes.jpg);
+    background-image: url(../img/camion-mapa2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

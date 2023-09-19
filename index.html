@@ -40,107 +40,109 @@
             </div>
         </nav>
     </header>
-    
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="img/camion-caja-mapa.jpg" style="width:100%;">
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/camion-caja-mapa.jpg" style="width:100%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/supply-chain-representation-still-life.jpg" style="width:100%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/vehicles-laptop-supply-chain-representation.jpg" style="width:100%;">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="mySlides fade">
-            <img src="img/supply-chain-representation-still-life.jpg" style="width:100%;">
-        </div>
-        <div class="mySlides fade">
-            <img src="img/vehicles-laptop-supply-chain-representation.jpg" style="width:100%;">
+
+        <br>
+
+        <div class="aaa" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
         
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-
-    <br>
-
-    <div class="aaa" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    
-    <div class="contenedor_rastreo">
-        <form action="html/rastreo.html" method="get">
-            <fieldset>
-                <div class="rastreo">
-                <h2>Rastrear su pedido</h2>
-                    <div class="codigo">
-                        <input type="text" placeholder="#codigo">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </div>
-            </fieldset>
-        </form>
-    </div>
-
-    <script src="js/script.js"></script>
-
-    <div class="container">
-        <h1>Bienvenido a Fork Software</h1>
-        <div class="formulario">
-            <form action="" method="get" name="formulario">
-            <fieldset>
-                <div class="contenedor_fieldset">
-                    <div class="img">
-                        <img src="img/LOGO.png" alt="logo">
-                    </div>
-                    <div class="dentro_formulario">  
-                        <h2 style="text-align: center;">Inicie sesión</h2>
-                        <input type="text" name="nombre_usuario" maxlength="20" placeholder="Usuario" required>
-                        <input type="password" name="contraseña" maxlength="12" placeholder="Contraseña" required>
-                        <div class="ingresar_crear">
-                            <input type="submit" value="INGRESAR">
+        <div class="contenedor_rastreo">
+            <form action="html/rastreo.html" method="get">
+                <fieldset>
+                    <div class="rastreo">
+                    <h2>Rastrear su pedido</h2>
+                        <div class="codigo">
+                            <input type="text" placeholder="#codigo">
+                            <input type="submit" value="Enviar">
                         </div>
                     </div>
-                </div>
-            </fieldset>
+                </fieldset>
             </form>
         </div>
-    </div>
 
-    <div class="container_roles">
-        <div class="roles" style="margin: 100px;">
-            <ul>
-                <li><a href="html/rastreo.html">Rastreo de paquete</a></li><br>
-                <li><a href="html/chofer.html">Chofer</a></li><br>
-                <li><a href="html/gerente.html">Gerente</a></li><br>
-                <li><a href="html/funcionario.html">Funcionario</a></li><br>
-                <li><a href="html/administrador.html">Administrador</a></li>
-            </ul>
-        </div>
-    </div>
+        <script src="js/script.js"></script>
 
-    <div id="sobre_nosotros">
-        <div class="nosotros">
-            <div class="img_nosotros">
-                <img src="img/arrangement-with-laptop-boxes.jpg" alt="IMG" width="250px" height="auto">
-            </div>
-            <div class="texto">
-                <h2>Sobre Nosotros:</h2>
-                    <p style="color: white;">
-                        Fork Software es una empresa de informática especializada en el 
-                        control y supervisión efectiva del transporte de paquetería. 
-                        Su enfoque principal es garantizar la seguridad y eficiencia 
-                        de cada envío, proporcionando a las empresas una visibilidad 
-                        completa y en tiempo real de sus paquetes. A través de su plataforma 
-                        tecnológica avanzada, Fork Software permite un seguimiento detallado 
-                        de los envíos, brindando a sus clientes la tranquilidad de saber 
-                        dónde se encuentran sus paquetes en todo momento. Aunque actualmente 
-                        operan exclusivamente en Uruguay, la empresa tiene planes de 
-                        expansión hacia otros países cercanos en el futuro. Con un enfoque 
-                        en la innovación y la colaboración con otras empresas, Fork Software 
-                        se esfuerza por adaptarse a las necesidades futuras de sus clientes 
-                        en el campo de la logística.
-                    </p>
+        <div class="container">
+            <h1>Bienvenido a Fork Software</h1>
+            <div class="formulario">
+                <form action="" method="get" name="formulario">
+                <fieldset>
+                    <div class="contenedor_fieldset">
+                        <div class="img">
+                            <img src="img/LOGO.png" alt="logo">
+                        </div>
+                        <div class="dentro_formulario">  
+                            <h2 style="text-align: center;">Inicie sesión</h2>
+                            <input type="text" name="nombre_usuario" maxlength="20" placeholder="Usuario" required>
+                            <input type="password" name="contraseña" maxlength="12" placeholder="Contraseña" required>
+                            <div class="ingresar_crear">
+                                <input type="submit" value="INGRESAR">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                </form>
             </div>
         </div>
-    </div>
 
+        <div class="container_roles">
+            <div class="roles" style="margin: 100px;">
+                <ul>
+                    <li><a href="html/rastreo.html">Rastreo de paquete</a></li><br>
+                    <li><a href="html/chofer.html">Chofer</a></li><br>
+                    <li><a href="html/gerente.html">Gerente</a></li><br>
+                    <li><a href="html/funcionario.html">Funcionario</a></li><br>
+                    <li><a href="html/administrador.html">Administrador</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="sobre_nosotros">
+            <div class="nosotros">
+                <div class="img_nosotros">
+                    <img src="img/arrangement-with-laptop-boxes.jpg" alt="IMG" width="250px" height="auto">
+                </div>
+                <div class="texto">
+                    <h2>Sobre Nosotros:</h2>
+                        <p style="color: white;">
+                            Fork Software es una empresa de informática especializada en el 
+                            control y supervisión efectiva del transporte de paquetería. 
+                            Su enfoque principal es garantizar la seguridad y eficiencia 
+                            de cada envío, proporcionando a las empresas una visibilidad 
+                            completa y en tiempo real de sus paquetes. A través de su plataforma 
+                            tecnológica avanzada, Fork Software permite un seguimiento detallado 
+                            de los envíos, brindando a sus clientes la tranquilidad de saber 
+                            dónde se encuentran sus paquetes en todo momento. Aunque actualmente 
+                            operan exclusivamente en Uruguay, la empresa tiene planes de 
+                            expansión hacia otros países cercanos en el futuro. Con un enfoque 
+                            en la innovación y la colaboración con otras empresas, Fork Software 
+                            se esfuerza por adaptarse a las necesidades futuras de sus clientes 
+                            en el campo de la logística.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
     <footer>
         <div class="container-footer">
             <div class="empresa-container espacio">

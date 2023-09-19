@@ -1,61 +1,4 @@
 
-/*
-.footer{
-    position: absolute;
-}
-
-h2{
-    color: white;
-    text-align: center;
-}
-
-.tabla{
-    border-collapse: collapse;
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-th, td{
-    padding: 5px;
-    color: white;
-    border: white 1px solid;
-    white-space: normal;
-    overflow: hidden;
-    max-width: 200px;
-    word-wrap: break-word;
-}
-
-.btn{
-    border: none;
-    width: 200px;
-}
-
-.btn-modificar, .btn-eliminar{
-    color: black;
-    cursor: pointer;
-    padding: 3px;
-}
-
-.btn-modificar:hover, .btn-eliminar:hover{
-    transition: all 1s ease 0s;
-    background-color: #0088ea;
-}
-
-@media(max-width: 768px){
-    .table{
-        font-size: 12px;
-    }
-    th{
-        display: none;
-    }
-    td{
-        display: grid;
-        grid-template-columns: 15ch auto;
-        padding: 5px;
-    }
-}
-*/
 .footer{
     position: absolute;
 }
@@ -72,36 +15,20 @@ h2{
     margin-bottom: 100px;
 }
 
-table{
-    width: 100%;
-    padding: 1rem;
-    border-collapse: collapse;
-}
-
-th,td{
-    padding: 1rem;
-    color: white;
-}
-
-th{
-    text-align: left;
-    background-color: rgb(0, 0, 0);
-}
-
-.btn{
-    border: none;
-    width: 200px;
-}
-
 .btn-modificar, .btn-eliminar{
+    width: 50px;
     color: black;
     cursor: pointer;
     padding: 3px;
 }
 
-.btn-modificar:hover, .btn-eliminar:hover{
+.btn-eliminar:hover{
     transition: all 1s ease 0s;
-    background-color: #0088ea;
+    background-color: #ea0000;
+} 
+.btn-modificar:hover{
+    transition: all 1s ease 0s;
+    background-color: #1bea00;
 }
 
 /*
@@ -110,6 +37,16 @@ th{
     overflow-x: scroll;
 }
 */
+
+select{
+    width: 150px;
+    padding: 3px;
+}
+
+.tabla  tr:hover td{
+    background-color: #0088ea;
+    color: black;
+}
 
 tr:nth-of-type(2n){
     background-color: rgb(58, 58, 58);
