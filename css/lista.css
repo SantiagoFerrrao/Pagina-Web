@@ -15,6 +15,14 @@ h2{
     margin-bottom: 100px;
 }
 
+.btn{
+    display: block;
+    margin: auto;
+    width: 150px;
+    padding: 3px;
+    color: black;
+}
+
 .btn-modificar, .btn-eliminar{
     width: 50px;
     color: black;
