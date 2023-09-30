@@ -222,7 +222,7 @@ h1{
 ::placeholder { color: black; }
 
 .dentro_formulario input{
-    width: 300px;
+    width: 80%;
     height: 35px;
     margin: 10px 13px;
     padding-left: 10px;
@@ -484,6 +484,7 @@ h3{
     .contenedor_fieldset .img{
         margin: auto;
         text-align: center;
+        width: 100%;
     }
     .contenedor_fieldset img{
         width: 200px;
