@@ -8,21 +8,15 @@
 body{
     background-color: #141414;
     position: relative;
-    /*padding-bottom: 10em;*/
     min-height: 100vh;
 }
 
 header{
     width: 100%;
     position: static;
-    /*
-    justify-content: space-between;
-    align-items: center;
-    */
     padding: 1px 10%;
     background-color: #141414;
     box-shadow: 0 0 10px #FFFFFF;
-    /*background-color: #de744c;*/
 }
 
 .logo{
@@ -129,80 +123,6 @@ li, a, button{
     font-size: 18px;
     color: #0088ae;
 }
-
-/*----------------------------------------------------------------------------------------*/
-
-.contenedor_lista{
-    width: min(900px, 100% - 3rem);
-    margin-inline: auto;
-}
-
-table{
-    width: 100%;
-    padding: 1rem;
-    border-collapse: collapse;
-}
-
-select{
-    padding: 3px;
-    width: 150px;
-}
-
-th,td{
-    padding: 1rem;
-    color: white;
-}
-
-th{
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-}
-
-/*
-.contenedor_lista{
-    max-width: 100%;
-    overflow-x: scroll;
-}
-*/
-
-.tabla thead tr th{
-    border: 1px solid white;
-}
-
-.tabla tbody tr td{
-    border: 1px solid white;
-}
-
-.tabla  tr:hover td{
-    background-color: #BFD8D2;
-    color: black;
-}
-
-tr:nth-of-type(2n){
-    background-color: rgb(58, 58, 58);
-}
-
-@media (max-width: 650px){
-    
-    th{
-        display: none;
-    }
-
-    td{
-        display: grid;
-        padding: 5px;
-        grid-template-columns: 15ch auto;
-    }
-
-    td::before{
-        content: attr(data-cell) ": ";
-        font-weight: 700;
-        text-transform: capitalize;
-    }
-}
-
-
-/*----------------------------------------------------------------------------------------*/
 
 footer{
     width: 100%;
@@ -326,41 +246,45 @@ h3{
 }
 
 @media (max-width:1020px){
-    .nosotros{
-        display: block;
-        height: auto;
-    }
-    .img_nosotros{
-        display: none;
-    }
     .container-footer{
         justify-content: space-evenly;
     }
 }
 
 @media(max-width:890px){
-    fieldset{
-        padding: 20px 5px;
+    .checkbtn{
+        display: block;
     }
-    .contenedor_fieldset {
-        flex-direction: column;
-        align-items: center;
-    }
-    .contenedor_fieldset .img{
-        margin: auto;
+    .nav_links{
+        display: flex;
+        flex-direction: column; 
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 110px;
+        left: -100%;
+        background-color: black;
         text-align: center;
+        transition: all .5s;
     }
-    .contenedor_fieldset img{
-        width: 200px;
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
-    .ingresar_crear{
-        margin-left: auto;
+    nav ul li a{
+        font-size: 20px;
     }
-    .dentro_formulario{
-        text-align: center;
+    li a:hover, li a.active{
+        background: none;
+        color: white;
     }
-    .formulario{
-        width: auto;
+    #check:checked ~ .slideshow-container{
+        z-index: 0;
+    }
+    #check:checked ~ .nav_links{
+        left: 0;
+        z-index: 2;
     }
 }
 
@@ -374,7 +298,8 @@ h3{
     }
     .nav_links {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
+        top: 90px; 
         align-items: center;
     }
     .nav_links li {
@@ -391,9 +316,6 @@ h3{
     .menu-idioma ul li a{
         width: auto;
     }
-    /*.menu-idioma {
-        display: flex;
-        justify-content: center;
-        
-    }*/
 }
+
+
