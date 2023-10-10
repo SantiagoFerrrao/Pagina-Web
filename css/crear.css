@@ -135,8 +135,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #DE744C;
 }
-
-.footer{
-    position: absolute;
-}
-
