@@ -14,6 +14,10 @@ h2{
     text-align: center;
 }
 
+.contenedor{
+    padding: 1em 0;
+}
+
 .contenedor_opciones{
     display: flex;
     flex-wrap: wrap;
@@ -57,4 +61,14 @@ h2{
 
 ul, li{
     list-style: none;
+}
+
+@media (max-width:900px){
+
+    .opcion{
+        width: 90%;
+    }
+    .opciones{
+        width: 50%;
+    }
 }
