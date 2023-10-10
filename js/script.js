@@ -25,3 +25,12 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+const checkbox = document.getElementById('check');
+const menuLinks = document.querySelectorAll('[data-close-menu]');
+
+menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener('click', () => {
+        checkbox.checked = false;
+    });
+});

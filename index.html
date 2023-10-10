@@ -14,19 +14,22 @@
 <body>
     <header>
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
             <div class="container_logo">
                 <a href="index.html">
                     <img class="logo" src="img/LOGO.png" alt="logo">
                 </a>
             </div>
-            <div class="algo">
-                <ul class="nav_links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#sobre_nosotros" >Sobre nosotros</a></li>
-                    <li><a href="html/servicios.html">Servicios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
+            <ul class="nav_links">
+                <li><a href="index.html" data-close-menu>Inicio</a></li>
+                <li><a href="#sobre_nosotros" data-close-menu>Sobre nosotros</a></li>
+                <li><a href="html/servicios.html" data-close-menu>Servicios</a></li>
+                <li><a href="#contacto" data-close-menu>Contacto</a></li>
+            </ul>
+            
             <div class="menu-idioma">
                 <div class="seleccionar_idioma">
                     <p class="idioma">Español</p>
@@ -44,28 +47,28 @@
     </header>
 
     <main>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="img/camion-caja-mapa.jpg" style="width:100%;">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="img/camion-caja-mapa.jpg" style="width:100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/supply-chain-representation-still-life.jpg" style="width:100%;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/vehicles-laptop-supply-chain-representation.jpg" style="width:100%;">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <div class="mySlides fade">
-                <img src="img/supply-chain-representation-still-life.jpg" style="width:100%;">
-            </div>
-            <div class="mySlides fade">
-                <img src="img/vehicles-laptop-supply-chain-representation.jpg" style="width:100%;">
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
 
-        <br>
+            <br>
 
-        <div class="aaa" style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+            <div class="aaa" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         
         <div class="contenedor_rastreo">
             <form action="html/rastreo.html" method="get">
@@ -81,7 +84,7 @@
             </form>
         </div>
 
-        <script src="js/script.js"></script>
+        
 
         <div class="container">
             <h1>Bienvenido a Fork Software</h1>
@@ -113,6 +116,7 @@
                     <li><a href="html/chofer.html">Chofer</a></li><br>
                     <li><a href="html/gerente.html">Gerente</a></li><br>
                     <li><a href="html/funcionario.html">Funcionario</a></li><br>
+                    <li><a href="html/administrador.html">Administrador</a></li>
                 </ul>
             </div>
         </div>
@@ -143,7 +147,7 @@
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="container-footer">
             <div class="empresa-container espacio">
@@ -176,5 +180,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
