@@ -58,6 +58,12 @@ tr:nth-of-type(2n){
     background-color: rgb(58, 58, 58);
 }
 
+@media (max-width: 768px){
+    .footer{
+        position: absolute;
+    }
+}
+
 @media (max-width: 650px){
     
     th{
@@ -78,5 +84,9 @@ tr:nth-of-type(2n){
 
     .file{
         text-align: left;
+    }
+
+    .btn{
+        width: auto;
     }
 }
