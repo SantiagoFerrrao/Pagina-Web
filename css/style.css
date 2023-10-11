@@ -246,12 +246,18 @@ h3{
 }
 
 @media (max-width:1020px){
+    header{
+        padding: 1px 1em;
+    }
     .container-footer{
         justify-content: space-evenly;
     }
 }
 
 @media(max-width:890px){
+    .seleccionar_idioma{
+        width: auto;
+    }
     .checkbtn{
         display: block;
     }
@@ -266,6 +272,7 @@ h3{
         background-color: #141414;
         text-align: center;
         transition: all .5s;
+        opacity: 0.98;
     }
     nav ul li{
         display: block;
@@ -296,7 +303,7 @@ h3{
         width: 150px;
         height: auto;
     }
-    .nav_links {
+    /* .nav_links {
         display: flex;
         flex-direction: column;
         top: 90px; 
@@ -305,7 +312,7 @@ h3{
     .nav_links li {
         margin: 10px 0;
         text-align: center;
-    }
+    } */
     .seleccionar_idioma::before{
         align-items: center;
         margin: 0 auto;
