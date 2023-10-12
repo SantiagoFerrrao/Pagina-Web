@@ -78,3 +78,16 @@ li.ges_transporte{
 .texto-li{
     backdrop-filter: blur(10px);
 }
+
+@media (max-width:890px){
+    .nav_servicios{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .a{
+        margin: 10px auto;
+    }
+    .ges_transporte{
+        margin: 30px auto;
+    }
+}

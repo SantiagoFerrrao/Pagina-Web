@@ -47,3 +47,13 @@ h1,h2,p{
     background-position: center;
     cursor: pointer;
 }
+
+@media (max-width:500px){
+    .contenedor_rastreo{
+        padding: 0 1em;
+    }
+    .rastreo{
+        width: 80%;
+        height: 250px;
+    }
+}
